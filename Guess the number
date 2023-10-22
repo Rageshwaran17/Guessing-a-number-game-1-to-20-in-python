@@ -1,0 +1,18 @@
+import random
+num = random.randint(1,20)
+user = int(input("Enter a guessing number btw 1 to 20 :"))
+chance = 1
+while user != num and chance !=5:
+    
+     if user > num:
+         print("Guessed higher")
+     else:
+        print("Guessed lower")
+        
+     user = int(input("Try again :")) 
+     chance += 1
+if chance==5:     
+    print("Chances are over!") 
+if user==num:
+    print("Your guessing is correct good job ;)")    
+    
